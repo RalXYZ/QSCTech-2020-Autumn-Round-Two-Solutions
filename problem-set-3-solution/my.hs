@@ -3,6 +3,7 @@ import Data.Set as Set
 data Foo = Foo {lSet :: Set Foo, rSet :: Set Foo}
     deriving (Show)
 
+
 instance Eq Foo where
     x == y = (x <= y) && (y <= x)
 
@@ -23,4 +24,10 @@ instance Ord Foo where
 
 instance Num Foo where
     (+) x y = Foo (Set.union (Set.map (+y) (lSet x)) (Set.map (+x) (lSet y))) (Set.union (Set.map (+y) (rSet x)) (Set.map (+x) (rSet y)))
+    (negate) x = Foo (Set.map (negate) (rSet x)) (Set.map (negate) (lSet x))
+    -- 顺便实现了个加法逆元...反正挺好实现的
 
+{-
+instance Show Foo where
+    show foo = "{" +  + "}"
+    -}
