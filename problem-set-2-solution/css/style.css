@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'DIN-Light';
+    src: url('../fonts/DIN-Light.otf');
+}
+@font-face {
+    font-family: 'DIN-Medium';
+    src: url('../fonts/DIN-Medium.otf');
+}
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('../fonts/Raleway-Medium.ttf');
+}
+@font-face {
+    font-family: 'Raleway-Thin';
+    src: url('../fonts/Raleway-Thin.ttf');
+}
+
+body {
+    margin: 0;
+}
+
+#page-1 {
+    background-color: #121117;
+    height: 100vh;
+    margin: 0;
+}
+
+.title {
+    width: 120px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.main {
+    position: relative;
+    background-image: url('../imgs/stars-translucent.svg');
+    height: 85vh;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.circle {
+    position: absolute;
+    width: 314px;
+    height: 314px;
+    background-color: #C97640;
+    border-radius: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(20px, -50%);
+}
+
+.main-text {
+    font-size: 80px;
+    color: white;
+    font-family: 'Raleway-Medium';
+}
+
+.text-title {
+    margin: 0;
+}
+
+.text-center {
+    margin: 0;
+    width: 1000px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    width: 300px;
+    height: 80px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 24px;
+    font-family: 'DIN-Medium';
+}
+
+#page-2 {
+    background-color: #FAE2D0;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-family: 'Raleway-Medium';
+}
+
+.our-products {
+    width: 20%;
+    margin: 0 auto;
+    border: white 1px solid;
+    background-color: black;
+    text-align: center;
+}
+
+.our-products p {
+    margin: 5px;
+    font: 24px bold;
+    color: white;
+    font-family: 'Raleway-Medium';
+}
+
+
+.flex-box-container {
+    display: flex;
+    text-align:center;
+    justify-content:center;
+    flex-wrap: nowrap;
+    margin-top: 100px;
+}
+
+.flex-box {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.flex-box-img {
+    width: 128px;
+}
+
+.flex-text {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.warning {
+    margin-top: 40px;
+    color: red;
+    font-size: 20px;
+}
+
+.and-more {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 44px;
+}
