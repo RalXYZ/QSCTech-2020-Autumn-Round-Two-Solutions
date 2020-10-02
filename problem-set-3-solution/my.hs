@@ -4,7 +4,7 @@ data Foo = Foo {lSet :: Set Foo, rSet :: Set Foo}
     deriving (Show)
 
 instance Eq Foo where
-    x == y = ((lSet x) == (lSet y)) && ((rSet x) == (rSet y))
+    x == y = (x <= y) && (y <= x)
 
 instance Ord Foo where
     x <= y = if ((Set.size (lSet x)) == 0 && (Set.size (rSet y)) == 0)
