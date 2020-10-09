@@ -40,7 +40,7 @@ echo $movie  # the result is Momento
 sudo useradd dino -p `openssl passwd -1 dinoallo` -s /bin/zsh  
 # I am using zsh, and I set login shell as zsh for dino
 sudoedit /etc/sudoers
-# add "user ALL=(ALL) ALL"
+# add "dino ALL=(ALL) ALL"
 ```
 
 
