@@ -60,7 +60,7 @@ apt depends xterm
 | Universe | 社区 | ✔ | docker |
 | Multiverse | 社区 | ⚠ | |
 | Restricted | 官方 | ❌ | nvidia-331 |
-| Partner |  | | adobe-flasplugin |
+| Partner |  | | adobe-flashplugin |
 > ...and NVIDIA has been the single worst company we've ever dealt with, so NVIDIA, f**k you!  
 > -- Linus Torvalds  
 
